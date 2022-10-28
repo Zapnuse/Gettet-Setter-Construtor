@@ -1,0 +1,64 @@
+package com.company;
+
+public class Mahasiswa {
+    //deklarasi class data mahasiswa
+    DataMahasiswa mhs;
+
+    public Mahasiswa() {
+        mhs = new DataMahasiswa();
+    }
+    public void main(String[] args) {
+
+
+    mhs.setNpm("20311073");
+    mhs.setNama("Candra");
+    mhs.setProdi("HKI");
+    mhs.setUmur(45);
+
+    //get value
+
+
+    mhs.getProdi();
+    mhs.getUmur();
+
+
+        System.out.println(mhs.getNpm());
+        System.out.println(mhs.getNama());
+    }
+}
+
+// next step make new java class 
+
+package com.company;
+
+public class DataMahasiswa {
+    String npm,nama,prodi;
+    int umur;
+
+    public String getNpm() {
+        return npm;
+    }
+
+    public void setNpm(String npm) {
+        this.npm = npm;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getProdi() {
+        return prodi;
+    }
+
+    public void setProdi(String prodi) {
+        this.prodi = prodi;
+    }
+
+    public int getUmur() {
+        return umur;
+    }
